@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Decision-maker</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<h1>Decision maker</h1>
+			<h2>A tool for justifying your irrational decisions with post-hoc pseudo-quantitative rationalisations</h2>
+		</header>
+		<main>
+			<article>
+				<section>
+					<h2>For:</h2>
+					<label for="forReason"></label>
+					<input type="text" id="forReason">
+					<button id="forButton">go</button>
+				</section>
+				<ul id="forList"></ul>
+			</article>
+			<article>
+				<section>
+					<h2>Against:</h2>
+					<label for="againstReason"></label>
+					<input type="text" id="againstReason">
+					<button id="againstButton">go</button>
+				</section>
+				<ul id="againstList"></ul>
+			</article>
+		</main>
+		<section>
+			<h2>Conclusion:</h2>
+			<p id="conclusion"></p>
+			<div class="scale">
+				<div class="pointer"></div>
+			</div>
+		</section>
+		<footer>Inspired by <a href="https://daveeveritt.github.io/decision-maker/" target="_blank">Dave</a></footer>
+		<script src="scripts.js"></script>
+	</body>
+</html>

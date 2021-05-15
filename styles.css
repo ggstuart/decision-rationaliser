@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:wght@300&display=swap');
+
+:root {
+	--color: white;
+	--rotate: 0.5turn;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: hsl(50, 50%, 40%);
+	color: hsl(50, 50%, 80%);
+	margin: 0;
+}
+
+header {
+	font-family: "Pangolin", sans-serif;
+	background-color: hsl(50, 50%, 10%);
+	overflow: auto;
+	padding: 0.5em 1em;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+article {
+	padding: 0.5em 1em;
+	background-color: hsl(50, 50%, 20%);
+	flex-grow: 1;
+	border: 1px solid hsl(50, 100%, 20%);
+}
+
+article section {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	display: flex;
+	gap: 1em;
+}
+
+input {
+	flex-grow: 1;
+}
+
+.scale {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 10px solid black;
+	background-color: var(--color);
+}
+
+.pointer {
+	position: absolute;
+	width: 5px;
+	height: 75px;
+	background-color: black;
+	transform-origin: 0 75px;
+	transform: translateX(75px) rotate(var(--rotate));
+}
+
+footer {
+	padding: 0.5em 1em;
+}
+
+@media screen and (min-width: 700px) {
+	main {
+		flex-direction: row;
+	}
+}
