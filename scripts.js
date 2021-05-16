@@ -59,8 +59,10 @@ function recalculate() {
 	if(final > 0) {
 		document.documentElement.style.setProperty('--color', "green");
 	} else {
-		document.documentElement.style.setProperty('--color', "red");				
+		document.documentElement.style.setProperty('--color', "red");
 	}
+	if (Math.abs(final) < 25) document.documentElement.style.setProperty('--color', "yellow");				
+
 	conclusion.textContent = `For: ${forPercent}%, Against: ${againstPercent}% - on balance: ${final}%`
 }
 
